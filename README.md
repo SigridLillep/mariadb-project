@@ -45,3 +45,31 @@ sudo ss -tlnp | grep 3306
 ```
 3360 ei anna tulemust, sest konfi on lisatud bind-address 127.0.0.1 ja skip-networking = 1, st et mariadb ei kuula TCP/IP võrku ehk port 3360 ei avatagi. Andmebaas on kasutatav ainult lokaalselt Unix socketi kaudu.
 
+"" Andmebaasi kloonimine
+```bash
+git clone git@github.com:SigridLillep/crsigrid.git
+cd crsigrid
+ls db
+```
+
+## Andmebaasi loomine ja kontroll
+```bash
+sudo mariadb
+```
+```sql
+CREATE DATABASE crsigrid;
+EXIT;
+```
+Andmete importimine:
+```bash
+sudo mariadb crsigrid < db/crsigrid.sql
+```
+Kontroll:
+```bash
+sudo mariadb
+```
+```sql
+USE crsigrid;
+SHOW TABLES;
+SELECT * FROM cars LIMIT 5;
+```
