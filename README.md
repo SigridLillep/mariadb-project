@@ -73,5 +73,5 @@ USE crsigrid;
 SHOW TABLES;
 SELECT * FROM cars LIMIT 5;
 ```
-```md
+
 ![Tabelite kontroll](pildid/Pilt7.png)
