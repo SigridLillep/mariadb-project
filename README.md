@@ -74,4 +74,4 @@ SHOW TABLES;
 SELECT * FROM cars LIMIT 5;
 ```
 ```md
-pildid/Pilt7.png
+![Tabelite kontroll](pildid/Pilt7.png)
