@@ -51,7 +51,7 @@ sudo ss -tlnp | grep 3306
 
 ![3360](pildid/Pilt4.png)
 
-"" Andmebaasi kloonimine
+## Andmebaasi kloonimine
 ```bash
 git clone git@github.com:SigridLillep/crsigrid.git
 cd crsigrid
