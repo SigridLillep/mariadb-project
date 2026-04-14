@@ -14,6 +14,8 @@ mariadb --version
 sudo service mariadb start
 sudo service mariadb status
 ```
+![MariaDB versioon](pildid/Pilt1.png)
+![MariaDB status](pildid/Pilt2.png)
 
 ## MariaDB turvaseadistus
 ```bash
@@ -38,12 +40,16 @@ local-infile = 0
 skip-name-resolve
 skip-networking = 1
 
+![Conf](pildid/Pilt3.png)
+
 ## MariaDB taaskäivitamine ja kontroll
 ```bash
 sudo service mariadb restart
 sudo ss -tlnp | grep 3306
 ```
 3360 ei anna tulemust, sest konfi on lisatud bind-address 127.0.0.1 ja skip-networking = 1, st et mariadb ei kuula TCP/IP võrku ehk port 3360 ei avatagi. Andmebaas on kasutatav ainult lokaalselt Unix socketi kaudu.
+
+![3360](pildid/Pilt4.png)
 
 "" Andmebaasi kloonimine
 ```bash
@@ -60,6 +66,8 @@ sudo mariadb
 CREATE DATABASE crsigrid;
 EXIT;
 ```
+![Andmebaasi loomine](pildid/Pilt6.png)
+
 Andmete importimine:
 ```bash
 sudo mariadb crsigrid < db/crsigrid.sql
