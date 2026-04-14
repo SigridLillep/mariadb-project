@@ -1,7 +1,8 @@
-# Install Ubuntu WSL on windows 11
+## Install Ubuntu WSL on windows 11
 https://www.youtube.com/watch?v=zZf4YH4WiZo
 
-# Süsteemi uuendamine
+## Süsteemi uuendamine
+'''bash
 sudo apt update 
 sudo apt upgrade -y
 
