@@ -2,7 +2,7 @@
 https://www.youtube.com/watch?v=zZf4YH4WiZo
 
 # Süsteemi uuendamine
-sudo apt update
+sudo apt update 
 sudo apt upgrade -y
 
 # MariaDB paigaldamine
