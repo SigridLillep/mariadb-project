@@ -19,7 +19,7 @@ sudo service mariadb status
 
 ## MariaDB turvaseadistus
 ```bash
-sudo mqsql_secure_installation
+sudo mysql_secure_installation
 ```
 ```bash
 switch to unix_socket authentication - Y
